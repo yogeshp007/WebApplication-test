@@ -1,0 +1,30 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div> 
+        <form action="/crud/index" method="post">
+
+            First Name :- <input type="text" name="firstname" value="" />
+            <br/>
+            <br/>
+            Last Name:- <input type="text" name="lastname" value="" />
+            <br/>
+            <br/>
+            <input type="submit" name="save" value="Save" />
+
+        </form>
+
+        @ViewBag.msg
+    </div>
+</body>
+</html>
